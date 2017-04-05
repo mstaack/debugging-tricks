@@ -24,5 +24,6 @@ user@devserver:~$ netstat -ant | awk '{print $6}' | sort | uniq -c | sort -n
 ```
  
 ## php return response & callback with apache (run this at the beginning)
-`Include  Connection: Close and Content-Length (strlen($contents))`
+Include: `Connection: Close and Content-Length (strlen($contents))`
+
 `ob_implicit_flush(true);`
