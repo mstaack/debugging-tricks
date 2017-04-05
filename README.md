@@ -8,7 +8,7 @@ Apache Memory Usage (MB): 60071.1
 Average Process Size (MB): 162.794
 
 ```
-## connection stats
+## global connection stats
 ```
 user@devserver:~$ netstat -ant | awk '{print $6}' | sort | uniq -c | sort -n
       1 Foreign
