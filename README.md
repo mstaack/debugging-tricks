@@ -21,9 +21,7 @@ user@devserver:~$ netstat -ant | awk '{print $6}' | sort | uniq -c | sort -n
     122 FIN_WAIT2
    3055 VERBUNDEN
   12889 TIME_WAIT
-  ```
-
+```
+ 
 ## php return response & callback with apache (run this at the beginning)
-```
-ob_implicit_flush(true);
-```
+`ob_implicit_flush(true);`
