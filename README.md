@@ -24,7 +24,6 @@ user@devserver:~$ netstat -ant | awk '{print $6}' | sort | uniq -c | sort -n
   ```
 
 ## php return response & callback with apache (run this at the beginning)
-
 ```
 ob_implicit_flush(true);
 ```
