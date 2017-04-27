@@ -22,6 +22,11 @@ user@devserver:~$ netstat -ant | awk '{print $6}' | sort | uniq -c | sort -n
    3055 VERBUNDEN
   12889 TIME_WAIT
 ```
+
+## kill process on port
+```
+fuser -n tcp -k 9000
+```
  
 ## php return response & callback with apache (run this at the beginning)
 Include: `Connection: Close and Content-Length (strlen($contents))`
